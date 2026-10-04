@@ -1,5 +1,5 @@
-import { useState } from 'react'
 import SkillBadge, { type Skill } from './SkillBadge.tsx'
+import LikeButton from './LikeButton'
 
 type ProfileCardProps = {
   name: string
@@ -18,11 +18,9 @@ function ProfileCard({
   githubUrl,
   skills,
 }: ProfileCardProps) {
-  const [liked, setLiked] = useState(false)
-
   return (
     <main>
-      <div className={`profile-card ${liked ? 'liked' : ''}`}>
+      <div className="profile-card">
         <div className="card-content">
           <img
             src={avatarUrl}
@@ -55,13 +53,7 @@ function ProfileCard({
               )}
             </div>
 
-            <button
-              id="likeBtn"
-              type="button"
-              onClick={() => setLiked(!liked)}
-            >
-              {liked ? 'Liked! ❤️' : 'Like'}
-            </button>
+            <LikeButton />
           </div>
         </div>
       </div>
