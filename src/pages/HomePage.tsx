@@ -1,12 +1,17 @@
 import ProfileCard from '../components/ProfileCard'
-import type { Skill } from '../components/SkillBadge'
+
+type Skill = {
+  id: number
+  name: string
+  label: string
+}
 
 const skills: Skill[] = [
-  { id: 1, label: 'HTML' },
-  { id: 2, label: 'CSS' },
-  { id: 3, label: 'JavaScript' },
-  { id: 4, label: 'React' },
-  { id: 5, label: 'TypeScript' },
+  { id: 1, name: 'HTML', label: 'HTML' },
+  { id: 2, name: 'CSS', label: 'CSS' },
+  { id: 3, name: 'JavaScript', label: 'JavaScript' },
+  { id: 4, name: 'React', label: 'React' },
+  { id: 5, name: 'TypeScript', label: 'TypeScript' },
 ]
 
 function HomePage() {

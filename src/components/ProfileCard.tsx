@@ -1,5 +1,12 @@
-import SkillBadge, { type Skill } from './SkillBadge.tsx'
-import LikeButton from './LikeButton'
+import SkillBadge from './SkillBadge'
+import LikeButton from './LikeButton' 
+import Card from './ui/card'
+
+type Skill = {
+  id: number
+  name: string
+  label: string
+}
 
 type ProfileCardProps = {
   name: string
@@ -20,7 +27,7 @@ function ProfileCard({
 }: ProfileCardProps) {
   return (
     <main>
-      <div className="profile-card">
+      <Card>
         <div className="card-content">
           <img
             src={avatarUrl}
@@ -56,7 +63,7 @@ function ProfileCard({
             <LikeButton />
           </div>
         </div>
-      </div>
+      </Card>
     </main>
   )
 }
