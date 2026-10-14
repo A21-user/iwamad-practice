@@ -138,3 +138,63 @@ footer {
     border-color: #e91e63;
     background-color: #fff0f5;
 }
+
+.register-page {
+  width: 100%;
+  max-width: 480px;
+  margin: 32px auto;
+  padding: 24px;
+}
+
+.register-page form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.register-page .field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.register-page input:not([type='checkbox']) {
+  width: 100%;
+  min-height: 44px;
+  padding: 10px 12px;
+  border: 1px solid #b9c1cc;
+  border-radius: 6px;
+  font: inherit;
+  box-sizing: border-box;
+}
+
+.register-page input[aria-invalid='true'] {
+  border-color: #b91c1c;
+}
+
+.register-page .field-error {
+  margin: 0;
+  color: #b91c1c;
+  font-size: 0.875rem;
+}
+
+.register-page .terms-field label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.register-page .terms-field input {
+  width: 18px;
+  height: 18px;
+}
+
+.register-page button {
+  min-height: 44px;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+.register-page .success-message {
+  color: #166534;
+}
