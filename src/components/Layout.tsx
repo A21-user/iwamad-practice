@@ -15,7 +15,7 @@ function Layout() {
       <Footer
         year={2026}
         name="Bakyt Arina"
-        week="Week 4"
+        week="Week 6"
       />
     </>
   )
