@@ -1,0 +1,40 @@
+
+.event-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    margin-top: 20px;
+  }
+  
+  .event-card {
+    padding: 20px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    background: white;
+    overflow-wrap: anywhere;
+  }
+  
+  .event-card h2 {
+    margin-top: 0;
+  }
+  
+  .event-card a {
+    display: inline-block;
+    margin-top: 8px;
+  }
+  
+  .event-card a,
+  a {
+    color: #075985;
+  }
+  
+  .event-card a:hover,
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  input {
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  
