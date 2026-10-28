@@ -1,3 +1,4 @@
+
 import { Outlet } from 'react-router'
 import Header from './Header'
 import Footer from './Footer'
@@ -10,12 +11,14 @@ function Layout() {
         role="Junior Web Developer"
       />
 
-      <Outlet />
+      <main>
+        <Outlet />
+      </main>
 
       <Footer
         year={2026}
         name="Bakyt Arina"
-        week="Week 6"
+        week="Week 7"
       />
     </>
   )
